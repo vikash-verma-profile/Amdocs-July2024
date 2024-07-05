@@ -16,18 +16,22 @@
     </head>
 
 <body>
+    
+<?php 
+include_once('Header.php');
+?>
     <div class="container" style="margin-top: 10px;">
     <div class="card">
         <div class="card-body">
-            <form>
+            <form action="sum.php" method="post">
                 <h1 class="h3 mb-3 fw-normal">Please give value of 2 Numbers for addition</h1>
             
                 <div class="form-floating extra-padding">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <input type="text" class="form-control" id="txtNumber1" name="txtNumber1" placeholder="name@example.com">
                   <label for="floatingInput">Number 1</label>
                 </div>
                 <div class="form-floating extra-padding">
-                  <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                  <input type="text" class="form-control" id="txtNumber2" name="txtNumber2" placeholder="Password">
                   <label for="floatingPassword">Number 2</label>
                 </div>
             
