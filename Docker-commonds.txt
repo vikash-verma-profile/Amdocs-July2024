@@ -1,0 +1,5 @@
+docker build -t demo-app .
+docker images
+docker run -d -p 9090:80 --name sample-test demo-app:latest
+docker ps
+
